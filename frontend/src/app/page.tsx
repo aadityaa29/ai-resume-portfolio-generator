@@ -17,23 +17,19 @@ export default function HomePage() {
         </p>
 
         <SignedOut>
-          <SignInButton mode="modal">
-            <Button size="lg" className="mb-4">
-              Get Started — Sign In
-            </Button>
-          </SignInButton>
-        </SignedOut>
+  <Button size="lg" className="mb-4">
+    Get Started — Sign In
+  </Button>
+</SignedOut>
 
-        <SignedIn>
-          <Link href="/dashboard">
-            <Button size="lg" className="mb-4">
-              Go to Dashboard
-            </Button>
-          </Link>
-          <div className="flex justify-center mt-2">
-            <UserButton afterSignOutUrl="/" />
-          </div>
-        </SignedIn>
+<SignedIn>
+  <Link href="/dashboard">
+    <Button size="lg" className="mb-4">
+      Go to Dashboard
+    </Button>
+  </Link>
+</SignedIn>
+
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 text-left">
           <FeatureCard
